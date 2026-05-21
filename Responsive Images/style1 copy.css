@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+a:link, a:visited {
+  border-color: #0681d2;
+  border-width: 2px;
+  border-style: solid;
+  background-color: none;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 75%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px #f2eded;
+}
+
+a:hover, a:active {
+  background-color: #0681d2;
+  color: white;
+  text-decoration: underline;
+}
+
+.purple:link, .purple:visited {
+  border-color:rgb(90, 34, 139);
+  border-width: 2px;
+  border-style: solid;
+  background-color: none;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 75%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px #f2eded;
+}
+
+.purple:hover, .purple:active {
+  background-color: rgb(90, 34, 139);
+  color: white;
+  text-decoration: underline;
+}
+
+.orange:link, .orange:visited {
+  border-color:rgb(187, 122, 9);
+  border-width: 2px;
+  border-style: solid;
+  background-color: none;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 75%;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 2px #f2eded;
+  
+}
+
+.orange:hover, .orange:active {
+  background-color: rgb(187, 122, 9);
+  color: white;
+  text-decoration: underline;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #0681d2;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+
+}
+
+header.p2 {
+  background-color: rgb(90, 34, 139);
+}
+
+header.p3 {
+  background-color: rgb(187, 122, 9);
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f4f2f2;
+  height: 1500px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container_1 {
+  position: relative;
+  text-align: right;
+  color: black;
+}
+
+.centered_1 {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 30px;
+}
+
+.container_2 {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+.centered_2 {
+  position: absolute;
+  left: 15%;
+  top: -25%;
+  transform: translate(-50%, 100%);
+  font-size: 30px;
+}
+
+.container_3 {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.centered_3 {
+  position: absolute;
+  right: -5%;
+  transform: translate(-160%, -950%);
+  font-size: 30px;
+}
+
+
+.container_4 {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+.centered_4 {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 30px;
+}
+
+.container_5 {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+.centered_5 {
+  position: absolute;
+  left: 15%;
+  top: -25%;
+  transform: translate(-50%, 120%);
+  font-size: 30px;
+}
+
+.container_6 {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.centered_6 {
+  position: absolute;
+  right: -5%;
+  transform: translate(-65%, -950%);
+  font-size: 30px;
+}
+
+.img1 {
+  box-shadow: 5px 5px 5px rgb(6, 129, 210);
+  border-color: #959492;
+  border-width: 2px;
+  border-style: inset;
+}
+
+.img2 {
+  box-shadow: 5px 5px 5px rgb(90, 34, 139);
+  border-color: #959492;
+  border-width: 2px;
+  border-style: inset;
+  border-top: none;
+}
+
+.img3 {
+  box-shadow: 5px 5px 5px rgb(187, 122, 9);
+  border-color: #959492;
+  border-width: 2px;
+  border-style: inset;
+  border-top: none;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
